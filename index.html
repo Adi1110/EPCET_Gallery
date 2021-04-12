@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EPCET Batch 2017</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='epcet.css'>
+  <script type="text/javascript" src="epcet.js"></script>
+</head>
+<body  background="4.jpg" data-spy="scroll" data-target="#navbar" data-offset="150">
+<nav class="navbar navbar-inverse navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">EPCET</a>
+    </div>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="https://collegedunia.com/college/13428-east-point-college-of-engineering-and-
+        technology-epcet-bangalore/admission">About</a>
+        <a href="Contact.html">Contact Me</a>
+        <a href="photo_gallery.html">Gallery</a>
+        <div class="topnav-right">
+          <!-- <a href="#">LogIn</a> -->
+          <button class="open-button" onclick="openForm()">LogIn</button>
+          <div class="form-popup" id="myForm">
+            
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</nav>
+<!-- </div> -->
+<div id="fixedfooter">
+    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="" target="_blank">Aditya Ranjan</a></p>
+  </div>
+</body>
+</html>

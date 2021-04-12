@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>Home Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="jquery.min.js"></script>
+		
+		<style type="text/css">
+			* {
+			  box-sizing: border-box;
+			}
+			
+			#text{
+				color: red;
+				font-style: italic;
+				font-size: 20px;
+				
+			}
+			body{
+				font-family: Arial, Helvetica, sans-serif;
+				background-image: url("96112.jpg");
+			}
+			
+			input {
+				padding: 5px 5px 12px 5px;
+				height: 30px;
+				padding: 5px;
+				font-size: 20px;
+				border-radius: 5px;
+				width: 300px;
+				
+			}
+			
+			
+			label{
+		
+			position: relative;
+			top: 3px;
+			width: 200px;
+			float: left;
+		
+			}
+		
+			.form-element{
+				margin-bottom: 5px;
+				color: white;
+				font-style: strong;
+				font-size: 20px;
+			}
+			
+			#submitbutton{
+				width: 120px;
+				margin-top: 40px;
+				margin-left: -1px;
+				position: fixed;
+		
+			}
+			
+			#resetbutton{
+				width: 120px;
+				margin-top: 40px;
+				margin-left: 190px;
+				position: fixed;
+		
+			}
+			
+			@media only screen and (max-width:800px) {
+			  /* For tablets: */
+			  .main {
+				width: 80%;
+				padding: 0;
+			  }
+			  .right {
+				width: 100%;
+			  }
+			}
+			@media only screen and (max-width:500px) {
+			  /* For mobile phones: */
+			  .menu, .main, .right {
+				width: 100%;
+			  }
+			}
+		</style>
+		
+		<h1><font color="white">Welcome to Email Portal!!</font></h1>
+		
+	</head>
+	
+	<body>
+		
+		<p id="text">Write to Us!!!</p>
+		
+		<form action="mailto:ranjan.aditya03@gmail.com" method="post" enctype="text/plain">
+			<div class="form-element">
+				
+				<label for="email">Email</label>
+				
+				<input type="text" name="email" id="email" placeholder="eg@gmail.com" /><br />
+		
+			</div>
+			
+			<div class="form-element">
+		
+				<label for="phone">Mobile</label>
+				
+				<input type="text" name="phone" id="phone" placeholder="eg0123456789" /><br />
+			</div>
+			
+			<div class="form-element">
+				<label for="subject">Subject</label>
+				<input type="text" class="form-control" id="subject" name="subject" >
+			</div>
+		  
+			<div class="form-element">
+				<label for="exampleTextarea">What would you like to ask me?</label>
+				<textarea class="form-control" id="content" name="content" rows="3"></textarea>
+			</div>
+			
+			<div class="form-element">
+				<input id="submitbutton" type="submit" value="Send" />
+				<input id="resetbutton" type="reset" value="Reset" />
+			</div>	
+		</form>
+
+	</body>
+	
+<html>
