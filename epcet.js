@@ -7,8 +7,8 @@ function closeForm() {
 }
 
 function myFunction(){
-	var email = document.forms["myForm"]["email"].value;
-	var psw = document.forms["myForm"]["psw"].value;
+	var email = document.forms["myForms"]["email"].value;
+	var psw = document.forms["myForms"]["psw"].value;
 	
 	if(email=="epcet" && psw=="adi123"){
 		window.location.href="photo_gallery";
