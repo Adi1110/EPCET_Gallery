@@ -6,14 +6,14 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none"
 }
 
-function myFunction(){
-	var email = document.forms["myForms"]["email"].value;
-	var psw = document.forms["myForms"]["psw"].value;
-	
-	if(email=="epcet" && psw=="adi123"){
-		window.location.href="photo_gallery";
+
+function check(form){
+	if(form.email.value=="adi@gmail.com" && form.psw.value=="adi123"){
+		window.open("photo_gallery.html");
 	}
 	else{
-		alert("Invalid email and password");
+		alert("Invalid email or pwd");
 	}
 }
+	
+

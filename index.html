@@ -26,13 +26,13 @@
         <a href="https://collegedunia.com/college/13428-east-point-college-of-engineering-and-
         technology-epcet-bangalore/admission">About</a>
         <a href="Contact.html">Contact Me</a>
-        <a href="photo_gallery.html">Gallery</a>
+        <!-- <a href="photo_gallery.html">Gallery</a> -->
         <div class="topnav-right">
           <!-- <a href="#">LogIn</a> -->
           <button class="open-button" onclick="openForm()">LogIn</button>
           <div class="form-popup" id="myForm">
             
-            <form name="myForms" action="photo_gallery.html" class="form-container">
+            <form name="form" class="form-container" method="post">
               <h1>Login</h1>
           
               <label for="email"><b>Email</b></label>
@@ -41,7 +41,8 @@
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
           
-              <button type="submit" class="btn">Login</button>
+              <button type="submit" class="btn" onclick="check(this.form)">Login</button>
+              <!-- <input type="button" onclick="check(this.form)" value="login"/> -->
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
           </div>
